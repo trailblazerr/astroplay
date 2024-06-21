@@ -20,20 +20,19 @@ const skillColor = "#0F5298";
 const fontWeight = "bold";
 const textCase = "uppercase";
 ---
-<BaseLayout pageTitle={pageTitle}>
-  <style define:vars={{skillColor, fontWeight, textCase}}>
-    h1 {
-      color: #0F5298;
-      font-size: 4rem;
-    }
+<style define:vars={{skillColor, fontWeight, textCase}}>
+  h1 {
+    color: #0F5298;
+    font-size: 4rem;
+  }
 
-    .skill {
-      color: var(--skillColor);
-      font-weight: var(--fontWeight);
-      text-transform: var(--textCase)
-    }
-  </style>
-  
+  .skill {
+    color: var(--skillColor);
+    font-weight: var(--fontWeight);
+    text-transform: var(--textCase)
+  }
+</style>
+<BaseLayout pageTitle={pageTitle}>
   <ul>
     <li>My name is {identity.firstName}.</li>
     <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
